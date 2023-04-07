@@ -1,0 +1,40 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	max-width: 551px;
+	width: 100%;
+	margin-bottom: 60px;
+	img {
+		width: 100%;
+		min-height: 523px;
+		display: block;
+		object-fit: cover;
+		transition: all 300ms ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.04);
+		}
+	}
+}
+
+.body {
+	width: 100%;
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h5 {
+		font-family: "Jost";
+		line-height: 33px;
+		color: $secondaryTextColor;
+	}
+}
+
+.arrow {
+	&:hover {
+		background-color: $brownTextColor;
+		i {
+			color: #fff;
+		}
+	}
+}
