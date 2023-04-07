@@ -1,0 +1,30 @@
+@import "~/assets/scss/variables.scss";
+
+.item {
+	max-width: 256px;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.body {
+	display: flex;
+	flex-direction: column;
+	span {
+		font-weight: 700;
+	}
+}
+
+.phone {
+	width: 93px;
+	height: 93px;
+	border-radius: 50%;
+	background-color: $primaryBackground;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	i {
+		font-size: 39px;
+		color: $brownTextColor;
+	}
+}

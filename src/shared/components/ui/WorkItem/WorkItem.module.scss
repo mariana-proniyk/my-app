@@ -1,0 +1,27 @@
+@import "~/assets/scss/variables.scss";
+
+.item {
+	display: flex;
+	flex-direction: column;
+	max-width: 358px;
+	width: 100%;
+	text-align: center;
+	a {
+		display: flex;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+		color: $secondaryTextColor;
+		font-weight: 600;
+		i {
+			color: $brownTextColor;
+			margin-top: 7px;
+			margin-left: 10px;
+			font-size: 18px;
+		}
+	}
+}
+.text {
+	margin-top: 20px;
+	margin-bottom: 43px;
+}
