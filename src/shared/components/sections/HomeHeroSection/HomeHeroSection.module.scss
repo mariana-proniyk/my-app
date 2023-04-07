@@ -1,0 +1,26 @@
+.root {
+	position: relative;
+	margin-bottom: 200px;
+	img {
+		height: 100%;
+		object-fit: cover;
+		border-bottom-left-radius: 150px;
+		width: 100%;
+	}
+}
+
+.body {
+	position: absolute;
+	z-index: 2;
+	top: 22%;
+	left: 8%;
+	max-width: 600px;
+	width: 100%;
+	h1 {
+		margin-bottom: 9px;
+	}
+}
+.button {
+	max-width: 220px;
+	margin-top: 21px;
+}

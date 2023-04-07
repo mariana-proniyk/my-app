@@ -1,0 +1,23 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	background-color: $primaryBackground;
+	border-radius: 70px;
+	padding: 88px 25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 150px;
+	max-width: 1200px;
+	letter-spacing: 0.1px;
+	h2 {
+		max-width: 547px;
+		text-align: center;
+	}
+}
+.cards {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 38px;
+}
