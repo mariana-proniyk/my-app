@@ -1,0 +1,33 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-bottom: 106px;
+}
+.cards {
+	margin-top: 93px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.card {
+	&:first-child {
+		img {
+			border-top-right-radius: 70px;
+		}
+	}
+	&:nth-child(2) {
+		img {
+			border-top-left-radius: 70px;
+		}
+	}
+	&:nth-child(3) {
+		img {
+			border-bottom-right-radius: 70px;
+		}
+	}
+	&:nth-child(4) {
+		img {
+			border-bottom-left-radius: 70px;
+		}
+	}
+}

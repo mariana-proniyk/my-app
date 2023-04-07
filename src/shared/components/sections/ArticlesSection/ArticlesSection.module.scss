@@ -1,0 +1,10 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-bottom: 200px;
+}
+.cards {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 52px;
+}

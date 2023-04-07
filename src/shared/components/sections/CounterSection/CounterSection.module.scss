@@ -1,0 +1,14 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	background-color: $primaryBackground;
+	padding-top: 150px;
+	padding-bottom: 150px;
+	margin-bottom: 200px;
+}
+
+.cards {
+	display: flex;
+	max-width: 1200px;
+	justify-content: space-between;
+}

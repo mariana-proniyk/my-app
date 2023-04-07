@@ -3,3 +3,7 @@ export * from "./WorkSection/WorkSection";
 export * from "./AboutUsSection/AboutUsSection";
 export * from "./TestimonialSection/TestimonialSection";
 export * from "./ClientSection/ClientSection";
+export * from "./ProjectSection/ProjectSection";
+export * from "./CounterSection/CounterSection";
+export * from "./ArticlesSection/ArticlesSection";
+export * from "./ContactSection/ContactSection";

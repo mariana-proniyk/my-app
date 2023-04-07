@@ -1,0 +1,20 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	background-color: $primaryTextColor;
+	padding: 82px 315px;
+	border-radius: 60px;
+	margin-bottom: 135px;
+}
+.title {
+	margin-bottom: 32px;
+	h2,
+	p {
+		color: #ffffff;
+	}
+}
+.button {
+	max-width: 237px;
+	margin-left: auto;
+	margin-right: auto;
+}
