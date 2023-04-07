@@ -1,0 +1,52 @@
+$icons-font: "icons";
+
+@font-face {
+    font-family: $icons-font;
+    src: url("../../public/fonts/icons/icons.ttf?62cb9a6210c7ac5a12e2a7106e442c39") format("truetype"),
+url("../../public/fonts/icons/icons.woff?62cb9a6210c7ac5a12e2a7106e442c39") format("woff"),
+url("../../public/fonts/icons/icons.woff2?62cb9a6210c7ac5a12e2a7106e442c39") format("woff2"),
+url("../../public/fonts/icons/icons.svg?62cb9a6210c7ac5a12e2a7106e442c39#icons") format("svg");
+}
+
+i[class^="icon-"]:before, i[class*=" icon-"]:before {
+    font-family: icons !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$icons-map: (
+    "arrow-right": "\f101",
+    "facebook": "\f102",
+    "in": "\f103",
+    "instagram": "\f104",
+    "phone": "\f105",
+    "search": "\f106",
+    "twitter": "\f107",
+);
+
+.icon-arrow-right:before {
+    content: map-get($icons-map, "arrow-right");
+}
+.icon-facebook:before {
+    content: map-get($icons-map, "facebook");
+}
+.icon-in:before {
+    content: map-get($icons-map, "in");
+}
+.icon-instagram:before {
+    content: map-get($icons-map, "instagram");
+}
+.icon-phone:before {
+    content: map-get($icons-map, "phone");
+}
+.icon-search:before {
+    content: map-get($icons-map, "search");
+}
+.icon-twitter:before {
+    content: map-get($icons-map, "twitter");
+}
