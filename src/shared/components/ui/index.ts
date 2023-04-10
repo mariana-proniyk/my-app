@@ -9,3 +9,8 @@ export * from "./CounterItem/CounterItem";
 export * from "./Arrow/Arrow";
 export * from "./ArticleItem/ArticleItem";
 export * from "./Social/Social";
+export * from "./SmallTitle/SmallTitle";
+export * from "./WhatWeDoItem/WhatWeDoItem";
+export * from "./ClientItem/ClientItem";
+export * from "./Input/Input";
+export * from "./InputError/InputError";

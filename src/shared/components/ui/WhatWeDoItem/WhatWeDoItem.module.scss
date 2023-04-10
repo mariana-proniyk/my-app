@@ -1,0 +1,28 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 150px;
+	img {
+		max-width: 659px;
+		width: 100%;
+		border-radius: 70px;
+		object-fit: cover;
+		transition: all 300ms ease-in-out;
+		cursor: pointer;
+		&:hover {
+			transform: scale(1.05);
+		}
+	}
+}
+.body {
+	max-width: 470px;
+	p {
+		margin-top: 23px;
+		margin-bottom: 41px;
+	}
+}
+.button {
+	max-width: 220px;
+}
