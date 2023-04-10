@@ -1,0 +1,15 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	padding: 160px 116px;
+	background: $primaryBackground;
+	border-radius: 70px;
+	margin-bottom: 200px;
+}
+.cards {
+	margin-top: 100px;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}

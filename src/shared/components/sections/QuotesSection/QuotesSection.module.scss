@@ -1,0 +1,47 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	max-width: 875px;
+	width: 100%;
+	border: 25px solid #f4f0ec;
+	border-radius: 70px;
+	min-height: 428px;
+	height: 100%;
+	position: relative;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 67px 62px;
+	margin-bottom: 200px;
+}
+
+.decor {
+	position: absolute;
+	max-width: 500px;
+	width: 100%;
+	height: 100%;
+	min-height: 600px;
+	background-color: #fff;
+	bottom: -17%;
+	left: 17%;
+}
+
+.quotes {
+	position: relative;
+	z-index: 3;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	span {
+		font-size: 85px;
+		line-height: 106px;
+		font-family: "DM Serif Display";
+		color: $primaryTextColor;
+	}
+	h3,
+	span {
+		font-style: italic;
+	}
+	.autor {
+		margin-top: 30px;
+	}
+}

@@ -1,0 +1,10 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-bottom: 23px;
+}
+
+.item {
+	display: flex;
+	flex-direction: row-reverse;
+}
