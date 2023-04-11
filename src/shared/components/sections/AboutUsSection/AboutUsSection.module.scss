@@ -25,4 +25,10 @@
 .button {
 	margin-top: 47px;
 	max-width: 238px;
+	&:hover {
+		background-color: $brownTextColor;
+		i {
+			color: #fff;
+		}
+	}
 }

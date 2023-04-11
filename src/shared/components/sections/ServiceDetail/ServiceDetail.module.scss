@@ -1,0 +1,21 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 150px;
+	h2 {
+		max-width: 448px;
+	}
+}
+
+.information {
+	max-width: 655px;
+	p {
+		margin-top: 30px;
+	}
+}
+
+.sub-title {
+	color: $brownTextColor;
+}

@@ -1,0 +1,30 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-top: 100px;
+	margin-bottom: 150px;
+}
+.tab-menu {
+	margin-bottom: 61px;
+}
+
+.list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.content {
+	max-width: 585px;
+}
+
+.big {
+	img {
+		min-height: 853px;
+	}
+}
+
+.small {
+	img {
+		min-height: 522;
+	}
+}
