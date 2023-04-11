@@ -4,6 +4,8 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Services } from "./pages/Services/Services";
+import { ServiceSingle } from "./pages/ServiceSingle/ServiceSingle";
+import { Pricing, Project } from "./pages";
 
 function App() {
 	return (
@@ -12,6 +14,9 @@ function App() {
 				<Route path="/" element={<Home />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/services" element={<Services />} />
+				<Route path="/service-single" element={<ServiceSingle />} />
+				<Route path="/pricing" element={<Pricing />} />
+				<Route path="/project" element={<Project />} />
 			</Routes>
 		</BrowserRouter>
 	);
