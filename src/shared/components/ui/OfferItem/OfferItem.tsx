@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Icon } from "../Icon/Icon";
 import styles from "./OfferItem.module.scss";
 
@@ -10,10 +11,10 @@ export const OfferItem: React.FC<OfferItemProps> = ({ title, text }) => {
 		<div className={styles.root}>
 			<h4>{title}</h4>
 			<p>{text}</p>
-			<a href="#">
+			<Link to="/service-single">
 				Read More
 				<Icon name={"arrow-right"}></Icon>
-			</a>
+			</Link>
 		</div>
 	);
 };

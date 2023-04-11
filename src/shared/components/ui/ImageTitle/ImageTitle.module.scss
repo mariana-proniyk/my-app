@@ -1,0 +1,23 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	width: 100%;
+	margin-top: 24px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	h5 {
+		font-family: "Jost";
+		line-height: 33px;
+		color: $secondaryTextColor;
+	}
+}
+
+.arrow {
+	&:hover {
+		background-color: $brownTextColor;
+		i {
+			color: #fff;
+		}
+	}
+}

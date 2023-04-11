@@ -1,0 +1,41 @@
+.root {
+	display: flex;
+	align-items: center;
+	max-width: 268px;
+	justify-content: space-between;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.number {
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	font-weight: 500;
+	// &.is-active {
+	// 	background: #f4f0ec;
+	// 	border: none;
+	// }
+}
+
+.arrow {
+	i {
+		font-size: 14px;
+	}
+}
+
+.number,
+.arrow {
+	width: 52px;
+	height: 52px;
+	border: 1px solid #cda274;
+	background-color: #fff;
+	cursor: pointer;
+	transition: all 400ms ease-in-out;
+	&:hover {
+		background: #f4f0ec;
+		border: none;
+	}
+}

@@ -1,0 +1,30 @@
+@import "~/assets/scss/variables.scss";
+
+.tab-menu {
+	max-width: 880px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	border: 1px solid #cda274;
+	border-radius: 18px;
+	ul {
+		display: flex;
+		justify-content: space-between;
+		li {
+			text-align: center;
+			font-weight: 600;
+			padding: 26px 50px;
+			width: 25%;
+			font-size: 18px;
+			line-height: 22px;
+			letter-spacing: 0.02em;
+			border-radius: 18px;
+			cursor: pointer;
+			transition: all 300ms ease-in-out;
+			&.is-active {
+				color: #ffff;
+				background-color: $brownTextColor;
+			}
+		}
+	}
+}

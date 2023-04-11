@@ -1,0 +1,24 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	width: 132px;
+	height: 132px;
+	border-radius: 50%;
+	background: #ffffff;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+	i {
+		font-size: 35px;
+		color: $brownTextColor;
+		transition: all 300ms ease-in-out;
+	}
+	&:hover {
+		background-color: $brownTextColor;
+		i {
+			color: #ffffff;
+		}
+	}
+}

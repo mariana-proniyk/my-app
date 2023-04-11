@@ -1,0 +1,83 @@
+@import "~/assets/scss/variables.scss";
+
+.item {
+	max-width: 368px;
+	width: 100%;
+	padding: 64px 0;
+	text-align: center;
+	background: $primaryBackground;
+	border-radius: 33px;
+	position: relative;
+	transition: all 300ms ease-in-out;
+	cursor: pointer;
+	ul {
+		margin-bottom: 28px;
+		li {
+			font-size: 20px;
+			line-height: 50px;
+		}
+	}
+	&:hover {
+		box-shadow: 0px 10px 20px rgba(136, 136, 136, 0.25);
+		.sub-title {
+			opacity: 1;
+			visibility: visible;
+		}
+		.price {
+			color: $brownTextColor;
+			&::before,
+			span {
+				color: $primaryTextColor;
+			}
+		}
+	}
+}
+.sub-title {
+	max-width: 220px;
+	background: #292f36;
+	border-radius: 18px;
+	color: #fff;
+	font-size: 18px;
+	width: 100%;
+	position: absolute;
+	top: 34.5%;
+	left: 19%;
+	text-align: center;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 400ms ease-in-out;
+}
+
+.price {
+	font-size: 85px;
+	line-height: 40px;
+	font-family: "DM Serif Display";
+	color: $primaryTextColor;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 30px;
+	padding-bottom: 37px;
+	border-bottom: 1px solid $brownTextColor;
+	margin-bottom: 28px;
+	transition: all 400ms ease-in-out;
+	&::before {
+		content: "$";
+		font-size: 25px;
+		color: $primaryTextColor;
+	}
+	span {
+		font-size: 25px;
+		display: block;
+		color: $primaryTextColor;
+	}
+}
+
+.button {
+	max-width: 220px;
+	margin-left: auto;
+	margin-right: auto;
+	&:hover {
+		background-color: $primaryTextColor;
+	}
+}
