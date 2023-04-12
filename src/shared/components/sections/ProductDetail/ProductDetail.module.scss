@@ -1,0 +1,51 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-bottom: 150px;
+}
+
+.body {
+	display: flex;
+	margin-bottom: 100px;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.description {
+	max-width: 658px;
+	width: 100%;
+	h2 {
+		margin-bottom: 11px;
+	}
+	p {
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0px;
+		}
+	}
+}
+
+.image {
+	width: 100%;
+	min-height: 660px;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+	border-radius: 70px;
+	cursor: pointer;
+	img {
+		object-fit: cover;
+		width: 100%;
+		height: 100%;
+		transition: all 300ms ease-in-out;
+		&:hover {
+			transform: scale(1.07);
+		}
+	}
+}
+
+.icon {
+	position: absolute;
+	top: 40%;
+	left: 44%;
+}

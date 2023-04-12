@@ -20,3 +20,6 @@ export * from "./VideoSection/VideoSection";
 export * from "./ServicePoints/ServicePoints";
 export * from "./PriceSection/PriceSection";
 export * from "./ProjectBanner/ProjectBanner";
+export * from "./ProductDetail/ProductDetail";
+export * from "./PostSection/PostSection";
+export * from "./NewsSection/NewsSection";
