@@ -1,0 +1,35 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	max-width: 500px;
+	width: 100%;
+	padding: 69px 84px;
+	background: $primaryBackground;
+	border-radius: 70px;
+	line-height: 33px;
+	min-height: 379px;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	transition: all 400ms ease-in-out;
+	cursor: pointer;
+	h5 {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 20px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	span,
+	a {
+		font-family: "Jost";
+		font-weight: 400;
+		font-size: 22px;
+		color: $secondaryTextColor;
+	}
+	&:hover {
+		box-shadow: 0px 10px 20px rgba(136, 136, 136, 0.25);
+	}
+}

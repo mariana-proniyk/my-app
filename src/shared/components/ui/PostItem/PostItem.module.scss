@@ -1,0 +1,62 @@
+@import "~/assets/scss/variables.scss";
+
+.item {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 22px;
+	border: 1px solid #e7e7e7;
+	filter: drop-shadow(0px 10px 30px rgba(255, 255, 255, 0.25));
+	border-radius: 62px;
+}
+.image {
+	max-width: 569px;
+	width: 100%;
+	min-height: 450px;
+	height: 100%;
+	overflow: hidden;
+	border-radius: 60px;
+	cursor: pointer;
+	img {
+		transition: all 400ms ease-in-out;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 60px;
+		display: block;
+		&:hover {
+			transform: scale(1.07);
+		}
+	}
+}
+.body {
+	max-width: 475px;
+	width: 100%;
+	p {
+		margin-top: 20px;
+	}
+}
+
+.date {
+	margin-top: 41px;
+	font-size: 16px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow {
+	width: 52px;
+	height: 52px;
+	transition: all 400ms ease-in-out;
+	i {
+		transition: all 400ms ease-in-out;
+		font-size: 14px;
+	}
+	&:hover {
+		background-color: $brownTextColor;
+		i {
+			color: #fff;
+		}
+	}
+}

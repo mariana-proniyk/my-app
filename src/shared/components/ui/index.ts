@@ -21,3 +21,7 @@ export * from "./PriceItem/PriceItem";
 export * from "./TabMenu/TabMenu";
 export * from "./ImageTitle/ImageTitle";
 export * from "./Pagination/Pagination";
+export * from "./ZoomIcon/ZoomIcon";
+export * from "./ProductDescription/ProductDescription";
+export * from "./ProductInfo/ProductInfo";
+export * from "./PostItem/PostItem";

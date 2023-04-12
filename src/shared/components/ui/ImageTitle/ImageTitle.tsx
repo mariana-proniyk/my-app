@@ -12,7 +12,9 @@ export const ImageTitle: React.FC<ImageTitleProps> = ({ title, subTitle }) => {
 				<h4>{title}</h4>
 				<h5>{subTitle}</h5>
 			</div>
-			<Arrow className={styles.arrow}></Arrow>
+			<a href="/project-detail">
+				<Arrow className={styles.arrow}></Arrow>
+			</a>
 		</div>
 	);
 };
