@@ -4,3 +4,5 @@ export * from "./Services/Services";
 export * from "./ServiceSingle/ServiceSingle";
 export * from "./Pricing/Pricing";
 export * from "./Project/Project";
+export * from "./ProjectSingle/ProjectSingle";
+export * from "./Blog/Blog";
