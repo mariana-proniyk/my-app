@@ -6,3 +6,4 @@ export * from "./Pricing/Pricing";
 export * from "./Project/Project";
 export * from "./ProjectSingle/ProjectSingle";
 export * from "./Blog/Blog";
+export * from "./BlogSingle/BlogSingle";
