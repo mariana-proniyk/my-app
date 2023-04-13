@@ -1,0 +1,26 @@
+.root {
+	margin-bottom: 62px;
+	h2 {
+		margin-bottom: 20px;
+	}
+	ol {
+		margin-bottom: 44px;
+		margin-top: 24px;
+		max-width: 742px;
+		width: 100%;
+		margin-left: 24px;
+		li {
+			margin-top: 32px;
+			list-style: decimal;
+			&:first-child {
+				margin-top: 0;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		border-radius: 30px;
+		object-fit: cover;
+		margin-bottom: 35px;
+	}
+}

@@ -1,0 +1,12 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 200px;
+}
+
+.body {
+	max-width: 800px;
+	width: 100%;
+}
