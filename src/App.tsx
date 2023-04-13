@@ -5,7 +5,7 @@ import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Services } from "./pages/Services/Services";
 import { ServiceSingle } from "./pages/ServiceSingle/ServiceSingle";
-import { Blog, Pricing, Project } from "./pages";
+import { Blog, BlogSingle, Pricing, Project } from "./pages";
 import { ProjectSingle } from "./pages/ProjectSingle/ProjectSingle";
 
 function App() {
@@ -20,6 +20,7 @@ function App() {
 				<Route path="/project" element={<Project />} />
 				<Route path="/project-detail" element={<ProjectSingle />} />
 				<Route path="/blog" element={<Blog />} />
+				<Route path="/blog-detail" element={<BlogSingle />} />
 			</Routes>
 		</BrowserRouter>
 	);
