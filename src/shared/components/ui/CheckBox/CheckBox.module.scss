@@ -1,0 +1,14 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	color: $brownTextColor;
+	font-size: 18px;
+	span {
+		width: 100%;
+	}
+	input {
+		width: 17px !important;
+		height: 17px !important;
+		margin-right: 10px;
+	}
+}

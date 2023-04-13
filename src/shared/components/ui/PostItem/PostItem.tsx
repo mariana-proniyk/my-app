@@ -27,7 +27,9 @@ export const PostItem: React.FC<PostItemProps> = ({
 				<p>{anotherText}</p>
 				<div className={styles.date}>
 					{date}
-					<Arrow className={styles.arrow}></Arrow>
+					<a href="/blog-detail">
+						<Arrow className={styles.arrow}></Arrow>
+					</a>
 				</div>
 			</div>
 		</div>

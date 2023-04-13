@@ -1,0 +1,29 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	h4 {
+		margin-bottom: 24px;
+	}
+	ul {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			margin-bottom: 11px;
+			margin-right: 10px;
+			a {
+				display: inline-block;
+				padding: 9px 30px;
+				background: #f4f0ec;
+				border-radius: 10px;
+				color: $primaryTextColor;
+				font-size: 18px;
+				transition: all 400ms ease-in-out;
+				&:hover {
+					background-color: $primaryTextColor;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,28 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	padding: 27px 32px;
+	background: $primaryBackground;
+	border-radius: 20px;
+	margin-bottom: 50px;
+	h4 {
+		margin-bottom: 10px;
+	}
+	ul {
+		li {
+			border-top: 1px solid #cda274;
+			&:first-child {
+				border-top: none;
+			}
+			a {
+				font-size: 22px;
+				line-height: 66px;
+				color: $secondaryTextColor;
+				transition: all 300ms ease-in-out;
+				&:hover {
+					color: $brownTextColor;
+				}
+			}
+		}
+	}
+}

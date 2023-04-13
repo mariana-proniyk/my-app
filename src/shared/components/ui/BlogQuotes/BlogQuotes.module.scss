@@ -1,0 +1,27 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	background-color: $primaryBackground;
+	border-radius: 50px;
+	padding: 53px 0;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	align-items: center;
+	text-align: center;
+	color: $brownTextColor;
+	margin-bottom: 27px;
+	h4 {
+		max-width: 345px;
+		color: $brownTextColor;
+		font-style: italic;
+		margin-bottom: 20px;
+	}
+	span {
+		font-family: "DM Serif Display";
+		transform: rotate(-180deg);
+		font-size: 200px;
+		line-height: 50px;
+		margin-bottom: 70px;
+	}
+}
