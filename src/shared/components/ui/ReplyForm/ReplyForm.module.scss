@@ -27,4 +27,7 @@
 
 .button {
 	max-width: 220px;
+	&:hover {
+		background-color: $brownTextColor;
+	}
 }

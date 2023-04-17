@@ -1,0 +1,45 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	max-width: 284px;
+	margin-bottom: 50px;
+	cursor: pointer;
+	transition: all 400ms ease-in-out;
+	&:hover {
+		.body {
+			border: 1px solid #4d5053;
+		}
+	}
+	img {
+		width: 100%;
+		max-height: 433px;
+		height: 100%;
+		display: block;
+		border-radius: 30px;
+		object-fit: cover;
+	}
+}
+
+.body {
+	text-align: center;
+	width: 100%;
+	margin-top: 5px;
+	padding: 17px 0;
+	border: 1px solid transparent;
+	border-radius: 30px;
+	transition: all 400ms ease-in-out;
+
+	h4 {
+		font-size: 22px;
+	}
+	span {
+		font-size: 18px;
+		color: $primaryTextColor;
+	}
+}
+.social {
+	max-width: 150px;
+	width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+}

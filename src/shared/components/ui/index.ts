@@ -35,3 +35,5 @@ export * from "./CheckBox/CheckBox";
 export * from "./Tags/Tags";
 export * from "./ReplyForm/ReplyForm";
 export * from "./BlogSubContent/BlogSubContent";
+export * from "./TeamItem/TeamItem";
+export * from "./TeamItemSingle/TeamItemSingle";
