@@ -7,3 +7,5 @@ export * from "./Project/Project";
 export * from "./ProjectSingle/ProjectSingle";
 export * from "./Blog/Blog";
 export * from "./BlogSingle/BlogSingle";
+export * from "./Team/Team";
+export * from "./TeamSingle/TeamSingle";
