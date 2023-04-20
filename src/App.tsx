@@ -5,7 +5,16 @@ import { Home } from "./pages/Home/Home";
 import { About } from "./pages/About/About";
 import { Services } from "./pages/Services/Services";
 import { ServiceSingle } from "./pages/ServiceSingle/ServiceSingle";
-import { Blog, BlogSingle, Pricing, Project } from "./pages";
+import {
+	Blog,
+	BlogSingle,
+	ContactUs,
+	FAQ,
+	Pricing,
+	Project,
+	Team,
+	TeamSingle,
+} from "./pages";
 import { ProjectSingle } from "./pages/ProjectSingle/ProjectSingle";
 
 function App() {
@@ -21,6 +30,10 @@ function App() {
 				<Route path="/project-detail" element={<ProjectSingle />} />
 				<Route path="/blog" element={<Blog />} />
 				<Route path="/blog-detail" element={<BlogSingle />} />
+				<Route path="/team" element={<Team />} />
+				<Route path="/team-detail" element={<TeamSingle />} />
+				<Route path="/contact" element={<ContactUs />} />
+				<Route path="/faq" element={<FAQ />} />
 			</Routes>
 		</BrowserRouter>
 	);
