@@ -1,7 +1,10 @@
 import { Footer, Header } from "../../shared/components/grid";
 import {
 	BiographySection,
+	FormSection,
+	RewievsSection,
 	SmallHeroSection,
+	SubBiographySection,
 } from "../../shared/components/sections";
 import { TeamItemSingle } from "../../shared/components/ui/TeamItemSingle/TeamItemSingle";
 
@@ -14,9 +17,6 @@ export const TeamSingle = () => {
 				subTitle={"Home / Team Single"}
 			></SmallHeroSection>
 			<TeamItemSingle
-				email={"info@yourdomain.com"}
-				tel={"+1 (378) 400-1234"}
-				web={"www.yourdomain.coms"}
 				name={"John Smith"}
 				work={"Designer"}
 				text={
@@ -24,6 +24,14 @@ export const TeamSingle = () => {
 				}
 			></TeamItemSingle>
 			<BiographySection></BiographySection>
+			<SubBiographySection></SubBiographySection>
+			<RewievsSection title={"Our Team Members"}></RewievsSection>
+			<FormSection
+				title={"Contact Me"}
+				text={
+					"Save my name, email, and website in this browser for the next time I comment."
+				}
+			></FormSection>
 			<Footer></Footer>
 		</>
 	);
