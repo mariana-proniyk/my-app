@@ -1,0 +1,27 @@
+@import "~/assets/scss/variables.scss";
+
+.css-yvszuv-Slider,
+.slider {
+	width: 100%;
+}
+
+.css-1ldz52l-Slider {
+	border: 2px solid $brownTextColor;
+}
+
+.css-3g5hux-Slider {
+	background-color: $brownTextColor !important;
+}
+
+.slider {
+	h5 {
+		font-family: "Jost";
+		font-weight: 500;
+	}
+	span {
+		// position: absolute;
+		// right: 0;
+		// top: 0;
+		font-size: 15px;
+	}
+}

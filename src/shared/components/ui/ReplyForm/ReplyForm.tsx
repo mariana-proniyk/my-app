@@ -12,6 +12,7 @@ const defaultValues: FormData = {
 	email: "",
 	name: "",
 	website: "",
+	subject: "",
 	message: "",
 	tel: "",
 };
@@ -21,10 +22,24 @@ type FormData = {
 	name: string;
 	message: string;
 	tel: string;
+	subject: string;
 	website: string;
 };
 
-export const ReplyForm = () => {
+type ReplyFormProps = {
+	subject?: string;
+	website?: string;
+	checkBox?: string;
+	className?: string;
+	title?: string;
+};
+export const ReplyForm: React.FC<ReplyFormProps> = ({
+	website,
+	subject,
+	checkBox,
+	className,
+	title,
+}) => {
 	const {
 		handleSubmit,
 		register,
@@ -39,8 +54,8 @@ export const ReplyForm = () => {
 		console.log("send data to server", data);
 	};
 	return (
-		<div className={styles.root}>
-			<h4>Leave a Reply</h4>
+		<div className={clsx(styles.root, className)}>
+			<h4>{title}</h4>
 			<form className={styles.form} onSubmit={handleSubmit(onFormSubmitted)}>
 				<div className={styles["input-wrapper"]}>
 					<Input placeholder="Name" type="name" {...register("name")}></Input>
@@ -58,16 +73,32 @@ export const ReplyForm = () => {
 						<InputError message={errors.email.message}></InputError>
 					)}
 				</div>
-				<div className={styles["input-wrapper"]}>
-					<Input
-						placeholder="Website"
-						type="website"
-						{...register("website")}
-					></Input>
-					{errors.website && touchedFields.website && (
-						<InputError message={errors.website.message}></InputError>
-					)}
-				</div>
+				{website && (
+					<div className={styles["input-wrapper"]}>
+						<Input
+							placeholder={website}
+							type="website"
+							{...register("website")}
+						></Input>
+						{errors.website && touchedFields.website && (
+							<InputError message={errors.website.message}></InputError>
+						)}
+					</div>
+				)}
+
+				{subject && (
+					<div className={styles["input-wrapper"]}>
+						<Input
+							placeholder={subject}
+							type="subject"
+							{...register("subject")}
+						></Input>
+						{errors.subject && touchedFields.subject && (
+							<InputError message={errors.subject.message}></InputError>
+						)}
+					</div>
+				)}
+
 				<div className={styles["input-wrapper"]}>
 					<Input placeholder="Phone" type="tel" {...register("tel")}></Input>
 					{errors.tel && touchedFields.tel && (
@@ -84,7 +115,10 @@ export const ReplyForm = () => {
 						<InputError message={errors.message.message}></InputError>
 					)}
 				</div>
-				<CheckBox className={styles["check-box"]}></CheckBox>
+				{checkBox && (
+					<CheckBox className={styles["check-box"]} text={checkBox}></CheckBox>
+				)}
+
 				<Button
 					isDisabled={!isValid}
 					className={styles.button}

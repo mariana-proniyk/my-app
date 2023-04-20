@@ -1,0 +1,64 @@
+@import "~/assets/scss/variables.scss";
+
+.item {
+	width: 100%;
+	padding: 24px 22px;
+	border-radius: 18px;
+	background: #ffffff;
+	border: 1px solid #cda274;
+	margin-top: 30px;
+	&:first-child {
+		margin-top: 0;
+	}
+	p {
+		display: none;
+		max-width: 420px;
+		width: 100%;
+	}
+	.minus {
+		opacity: 0;
+		visibility: hidden;
+	}
+	&.is-active {
+		background: #f4f0ec;
+		border: transparent;
+		p {
+			display: block;
+		}
+		.minus {
+			opacity: 1;
+			visibility: visible;
+		}
+		.plus {
+			opacity: 0;
+			visibility: hidden;
+		}
+	}
+}
+.body {
+	margin-bottom: 15px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	h6 {
+		font-weight: bold;
+		font-size: 18px;
+		font-family: "Jost";
+	}
+}
+
+.icon {
+	cursor: pointer;
+	width: 44px;
+	height: 44px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: #ffffff;
+	border-radius: 50%;
+	position: relative;
+	.plus,
+	.minus {
+		position: absolute;
+	}
+}

@@ -6,4 +6,5 @@ export const validationSchema = object({
 	message: string().min(15).required("*This field is required"),
 	tel: string().min(10).required("*This field is required"),
 	website: string().min(5).required("*This field is required"),
+	subject: string().min(5).required("*This field is required"),
 });

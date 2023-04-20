@@ -2,19 +2,14 @@ import clsx from "clsx";
 import { Icon } from "../Icon/Icon";
 import { Social } from "../Social/Social";
 import styles from "./TeamItemSingle.module.scss";
+import { InfoItem } from "../InfoItem/InfoItem";
 
 type TeamItemSingleProps = {
-	email: string;
-	tel: string;
-	web: string;
 	name: string;
 	work: string;
 	text: string;
 };
 export const TeamItemSingle: React.FC<TeamItemSingleProps> = ({
-	email,
-	tel,
-	web,
 	name,
 	work,
 	text,
@@ -28,27 +23,11 @@ export const TeamItemSingle: React.FC<TeamItemSingleProps> = ({
 				<h2>{name}</h2>
 				<span>{work}</span>
 				<p>{text}</p>
-				<div className={styles.info}>
-					<div className={styles.item}>
-						<div className={styles.icon}>
-							<Icon name={"email"}></Icon>
-						</div>
-						<span>{email}</span>
-					</div>
-					<div className={styles.item}>
-						<div className={styles.icon}>
-							<Icon name={"phone"}></Icon>
-						</div>
-						<span>{tel}</span>
-					</div>
-					<div className={styles.item}>
-						<div className={styles.icon}>
-							<Icon name={"earth"}></Icon>
-						</div>
-						<span>{web}</span>
-					</div>
-				</div>
-				<Social className={styles.social}></Social>
+				<InfoItem
+					email={"info@yourdomain.com"}
+					tel={"+1 (378) 400-1234"}
+					web={"www.yourdomain.com"}
+				></InfoItem>
 			</div>
 		</div>
 	);

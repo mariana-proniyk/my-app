@@ -37,3 +37,7 @@ export * from "./ReplyForm/ReplyForm";
 export * from "./BlogSubContent/BlogSubContent";
 export * from "./TeamItem/TeamItem";
 export * from "./TeamItemSingle/TeamItemSingle";
+export * from "./RangeSlider/RangeSlider";
+export * from "./InfoItem/InfoItem";
+export * from "./QuestionAnswer/QuestionAnswer";
+export * from "./QuestionItem/QuestionItem";
