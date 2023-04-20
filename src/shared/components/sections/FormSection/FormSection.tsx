@@ -2,7 +2,7 @@ import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
 import clsx from "clsx";
-import { Button, Input } from "../../ui";
+import { Button, CheckBox, Input } from "../../ui";
 import styles from "./FormSection.module.scss";
 
 import { validationSchema } from "./validation";
@@ -20,7 +20,12 @@ type FormData = {
 	message: string;
 };
 
-export const FormSection = () => {
+type FormSectionProps = {
+	title: string;
+	text?: string;
+};
+
+export const FormSection: React.FC<FormSectionProps> = ({ title, text }) => {
 	const {
 		handleSubmit,
 		register,
@@ -37,7 +42,7 @@ export const FormSection = () => {
 
 	return (
 		<section className={clsx(styles.root, ["content-center"])}>
-			<h2>Creative project? Let's have a productive talk.</h2>
+			<h2>{title}</h2>
 			<form className={styles.form} onSubmit={handleSubmit(onFormSubmitted)}>
 				<div className={clsx(styles.name, styles["input-wrapper"])}>
 					<Input placeholder="Name" type="name" {...register("name")} />
@@ -62,6 +67,10 @@ export const FormSection = () => {
 						<InputError message={errors.message.message}></InputError>
 					)}
 				</div>
+				{text && (
+					<CheckBox className={styles["check-box"]} text={text}></CheckBox>
+				)}
+
 				<Button
 					isDisabled={!isValid}
 					className={styles.button}

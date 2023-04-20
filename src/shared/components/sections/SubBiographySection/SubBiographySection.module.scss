@@ -1,0 +1,39 @@
+@import "~/assets/scss/variables.scss";
+
+.root {
+	margin-top: 45px;
+	display: flex;
+	justify-content: space-between;
+	h4 {
+		margin-bottom: 12px;
+	}
+}
+.left-content {
+	width: 50%;
+	p {
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+}
+.right-content {
+	width: 44%;
+	margin-bottom: 200px;
+	.cards {
+		margin-top: 19px;
+	}
+}
+
+.items {
+	margin-top: 30px;
+	max-width: 534px;
+	width: 100%;
+}
+
+.slider {
+	margin-top: 20px;
+	&:first-child {
+		margin-top: 0;
+	}
+}

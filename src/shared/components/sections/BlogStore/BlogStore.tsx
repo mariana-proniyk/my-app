@@ -12,7 +12,11 @@ export const BlogStore = () => (
 			<BlogQuotes></BlogQuotes>
 			<ArticleBlog></ArticleBlog>
 			<BlogSubContent></BlogSubContent>
-			<ReplyForm></ReplyForm>
+			<ReplyForm
+				title="Leave a Reply"
+				website="Website"
+				checkBox="Save my name, email, and website in this browser for the next time I comment."
+			></ReplyForm>
 		</div>
 		<SideBar></SideBar>
 	</section>

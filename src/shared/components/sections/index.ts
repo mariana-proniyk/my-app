@@ -27,3 +27,6 @@ export * from "./BlogStore/BlogStore";
 export * from "./ArticleBlog/ArticleBlog";
 export * from "./TeamSection/TeamSection";
 export * from "./BiographySection/BiographySection";
+export * from "./SubBiographySection/SubBiographySection";
+export * from "./LocationSection/LocationSection";
+export * from "./QuestionSection/QuestionSection";
