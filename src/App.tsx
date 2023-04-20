@@ -9,6 +9,7 @@ import {
 	Blog,
 	BlogSingle,
 	ContactUs,
+	ErrorNotFound,
 	FAQ,
 	Pricing,
 	Project,
@@ -34,6 +35,7 @@ function App() {
 				<Route path="/team-detail" element={<TeamSingle />} />
 				<Route path="/contact" element={<ContactUs />} />
 				<Route path="/faq" element={<FAQ />} />
+				<Route path="/error" element={<ErrorNotFound />} />
 			</Routes>
 		</BrowserRouter>
 	);
