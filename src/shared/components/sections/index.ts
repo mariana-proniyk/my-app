@@ -30,3 +30,4 @@ export * from "./BiographySection/BiographySection";
 export * from "./SubBiographySection/SubBiographySection";
 export * from "./LocationSection/LocationSection";
 export * from "./QuestionSection/QuestionSection";
+export * from "./ErrorSection/ErrorSection";

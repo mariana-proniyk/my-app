@@ -13,6 +13,15 @@
 	display: flex;
 	justify-content: space-between;
 	align-items: flex-start;
+
+	&.image-right {
+		flex-direction: row-reverse;
+	}
+}
+
+.image {
+	overflow: hidden;
+	border-radius: 30px;
 	img {
 		max-width: 555px;
 		width: 100%;
@@ -20,9 +29,11 @@
 		min-height: 678px;
 		object-fit: cover;
 		border-radius: 30px;
-	}
-	&.image-right {
-		flex-direction: row-reverse;
+		cursor: pointer;
+		transition: all 400ms ease-in-out;
+		&:hover {
+			transform: scale(1.07);
+		}
 	}
 }
 

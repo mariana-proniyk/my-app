@@ -18,7 +18,9 @@ export const QuestionSection: React.FC<QuestionSectionProps> = ({
 			<div
 				className={clsx(styles.body, { [styles["image-right"]]: isImageRight })}
 			>
-				<img src="images/banner.jpg" alt="photo" />
+				<div className={styles.image}>
+					<img src="images/banner.jpg" alt="photo" />
+				</div>
 				<div className={styles.questions}>
 					<QuestionAnswer
 						title={"What is the Hipcouch Interior Design Service?"}
