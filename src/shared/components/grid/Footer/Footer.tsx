@@ -14,7 +14,7 @@ export const Footer = () => {
 						It is a long established fact that a reader will be distracted
 						lookings.
 					</p>
-					<Social></Social>
+					<Social className={styles.social}></Social>
 				</div>
 				<div className={styles.menu}>
 					<div className={styles.list}>

@@ -7,8 +7,7 @@
 }
 
 .root,
-.menu,
-ul {
+.menu {
 	display: flex;
 	align-items: center;
 }
@@ -16,6 +15,8 @@ ul {
 .menu {
 	nav {
 		ul {
+			display: flex;
+			align-items: center;
 			li {
 				margin-left: 40px;
 				&:first-child {
@@ -23,6 +24,10 @@ ul {
 				}
 				a {
 					color: $primaryTextColor;
+					transition: all 300ms ease-in-out;
+					&:hover {
+						color: $brownTextColor;
+					}
 				}
 			}
 		}
@@ -31,4 +36,9 @@ ul {
 
 .search {
 	margin-left: 29px;
+	cursor: pointer;
+	transition: all 300ms ease-in-out;
+	&:hover {
+		color: $brownTextColor;
+	}
 }

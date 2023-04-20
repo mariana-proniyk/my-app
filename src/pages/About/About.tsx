@@ -17,8 +17,12 @@ export const About = () => {
 			></SmallHeroSection>
 			<QuotesSection></QuotesSection>
 			<WhatWeDo></WhatWeDo>
-			<RewievsSection></RewievsSection>
-			<FormSection></FormSection>
+			<RewievsSection
+				title={"What the People Thinks About Us"}
+			></RewievsSection>
+			<FormSection
+				title={"Creative project? Let's have a productive talk."}
+			></FormSection>
 			<Footer></Footer>
 		</>
 	);

@@ -1,4 +1,5 @@
 import clsx from "clsx";
+import { Link } from "react-router-dom";
 import { Icon } from "../../ui/Icon/Icon";
 import styles from "./Header.module.scss";
 
@@ -12,22 +13,22 @@ export const Header = () => {
 				<nav>
 					<ul>
 						<li>
-							<a href="">Home</a>
+							<Link to="/">Home</Link>
 						</li>
 						<li>
-							<a href="">Pages</a>
+							<Link to="">Pages</Link>
 						</li>
 						<li>
-							<a href="">Services</a>
+							<Link to="/services">Services</Link>
 						</li>
 						<li>
-							<a href="">Project</a>
+							<Link to="/project">Project</Link>
 						</li>
 						<li>
-							<a href="">Blog</a>
+							<Link to="/blog">Blog</Link>
 						</li>
 						<li>
-							<a href="">Contact</a>
+							<Link to="/contact">Contact</Link>
 						</li>
 					</ul>
 				</nav>
