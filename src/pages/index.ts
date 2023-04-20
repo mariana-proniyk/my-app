@@ -9,3 +9,6 @@ export * from "./Blog/Blog";
 export * from "./BlogSingle/BlogSingle";
 export * from "./Team/Team";
 export * from "./TeamSingle/TeamSingle";
+export * from "./ContactUs/ContactUs";
+export * from "./FAQ/FAQ";
+export * from "./ErrorNotFound/ErrorNotFound";
